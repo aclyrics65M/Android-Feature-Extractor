@@ -16,7 +16,7 @@ import xml.etree.ElementTree as ET
 import networkx as nx
 import re
 import os
-
+#test
 
 def extract_manifests(directory):
     os.makedirs("./manifests/", exist_ok=True)
