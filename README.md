@@ -1,5 +1,5 @@
 
-Feature Extractor for Android 
+Feature Extractor for Android Apps
 1) Extracts permissions
 2) Extracts implicit Intents
 3) Extracts Sensitive API Calls
