@@ -803,7 +803,7 @@ def extract_sensitive_apis():
         apkname = filename.replace('_callgraph.xml', '')
         analyze = os.path.join(directory, filename)
         output_file_path = os.path.join("./sensitive_apis_data/", apkname)
-        with open(f"{output_file_path}.txt", "w", encoding="utf-8") as output_file:
+        with open(f"{output_file_path}.csv", "w", encoding="utf-8") as output_file:
             #Reading the Callgraphs created using androguard tool
             G2 = nx.read_gml(analyze, label='label')
 
