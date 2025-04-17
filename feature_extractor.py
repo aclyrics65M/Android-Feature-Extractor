@@ -1,3 +1,13 @@
+##########################################################################################
+# File Name   : feature_extractor.py
+# Author      : Gautam Kakadiya
+# Description : Extracts the Features of Android apks like permissions, intents and sensitive api calls
+# Created On  : 17-04-2025
+# Last Edited : 17-04-2025 by Gautam Kakadiya
+# Version     : 1.0.0
+# Copyright   : © 2025 Gautam Kakadiya. All rights reserved.
+##########################################################################################
+
 import multiprocessing
 import sys
 import shutil
