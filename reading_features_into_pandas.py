@@ -31,14 +31,27 @@ def read_csvs_into_pd(folder):
     return full_df
 
 
-intents_filepath = 'intents_data'
+intents_benign_filepath = 'intents_data_benign'
 
-permissions_filepath = 'permissions_data'
+permissions_benign_filepath = 'permissions_data_benign'
     
-df_intents = read_csvs_into_pd(intents_filepath)
-df_intents.info()
-df_intents.to_csv('intents_merged.csv')
+df_intents_benign = read_csvs_into_pd(intents_benign_filepath)
+df_intents_benign.info()
+df_intents_benign.to_csv('intents_merged_benign.csv')
 
-df_permissions = read_csvs_into_pd(permissions_filepath)
-df_permissions.info()
-df_permissions.to_csv('permissions_merged.csv')
+df_permissions_benign = read_csvs_into_pd(permissions_benign_filepath)
+df_permissions_benign.info()
+df_permissions_benign.to_csv('permissions_merged_benign.csv')
+
+
+intents_malicious_filepath = 'intents_data_malicious'
+
+permissions_malicious_filepath = 'permissions_data_malicious'
+    
+df_intents_malicious = read_csvs_into_pd(intents_malicious_filepath)
+df_intents_malicious.info()
+df_intents_malicious.to_csv('intents_merged_malicious.csv')
+
+df_permissions_malicious = read_csvs_into_pd(permissions_malicious_filepath)
+df_permissions_malicious.info()
+df_permissions_malicious.to_csv('permissions_merged_malicious.csv')
