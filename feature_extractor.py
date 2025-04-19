@@ -1399,7 +1399,7 @@ def extract_static_data(directory):
 
 
 def extract_dynamic_data(directory):
-    # extract_callgraph(directory)
+    extract_callgraph(directory)
     extract_sensitive_apis()
 
 
@@ -1415,13 +1415,13 @@ if __name__ == "__main__":
     else:
         print(f"Invalid Apk directory path: {apkdirectory}")
 
-    # process1 = multiprocessing.Process(target=extract_static_data(apkdirectory))
+    process1 = multiprocessing.Process(target=extract_static_data(apkdirectory))
     process2 = multiprocessing.Process(target=extract_dynamic_data(apkdirectory))
 
-    # process1.start()
+    process1.start()
     process2.start()
 
-    # process1.join()
+    process1.join()
     process2.join()
 
     print("Done")
